@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfred's DevOps Lab- Makeshift website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(90deg, #1e293b, #334155);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 3px solid #38bdf8;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #38bdf8;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+            color: #cbd5e1;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .card {
+            background-color: #1e293b;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .card h2 {
+            color: #38bdf8;
+            margin-top: 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: #facc15;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e293b;
+            border-top: 2px solid #38bdf8;
+            margin-top: 30px;
+            font-size: 0.95rem;
+            color: #94a3b8;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #334155;
+            color: #38bdf8;
+            padding: 8px 14px;
+            border-radius: 20px;
+            margin: 5px 5px 0 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Alfred's DevOps Lab</h1>
+        <p>This page is hosted on my Linux VM using NGINX and accessed through a custom local domain.</p>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>About This Project</h2>
+            <p>
+                This is my beginner DevOps practice project. I created and hosted this HTML page on a 
+                <span class="highlight">Linux Virtual Machine</span> using 
+                <span class="highlight">NGINX web server</span>. 
+                I configured the server to serve this custom page and made it accessible through my local browser.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>What I Have Learned So Far</h2>
+            <ul>
+                <li>How to install and manage <strong>NGINX</strong> on Ubuntu Linux.</li>
+                <li>How to create and edit an <strong>HTML file</strong> in the Linux terminal.</li>
+                <li>How NGINX serves files from a defined <strong>root directory</strong>.</li>
+                <li>How to create a custom <strong>server block</strong> for a website.</li>
+                <li>How to use a local domain like <strong>mysite1.local</strong> with the Windows hosts file.</li>
+                <li>How to test NGINX configuration using <strong>sudo nginx -t</strong>.</li>
+                <li>How to reload NGINX after making configuration changes.</li>
+                <li>How to troubleshoot default page issues caused by wrong <strong>server_name</strong> settings.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Technologies Used</h2>
+            <span class="tag">Linux VM</span>
+            <span class="tag">Ubuntu</span>
+            <span class="tag">NGINX</span>
+            <span class="tag">HTML</span>
+            <span class="tag">Hosts File</span>
+            <span class="tag">Networking Basics</span>
+        </div>
+
+        <div class="card">
+            <h2>How This Page Works</h2>
+            <p>
+                When I type <strong>http://mysite1.local</strong> in my browser, my computer checks the 
+                <strong>hosts file</strong>, finds the IP address of my Linux VM, and sends the request there.
+                NGINX receives the request, matches the domain name in the server block, and serves this 
+                <strong>index.html</strong> file from my website folder.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>My Current DevOps Goal</h2>
+            <p>
+                I am building a strong foundation in DevOps by practicing hands-on tasks step by step. 
+                My focus is to master Linux, web servers, networking, Git, Docker, AWS, Kubernetes, Terraform, and CI/CD.
+            </p>
+            <p>
+                For now, this project proves that I can set up a web server, host a custom site, configure local domain access, 
+                and troubleshoot issues during deployment.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Message to Myself</h2>
+            <p>
+                Stay consistent. Keep practicing. Break things, fix them, and learn deeply. 
+                DevOps is built by doing, not just by watching.
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Created by Alfred Omosona | Beginner DevOps Lab Project</p>
+    </footer>
+
+</body>
+</html>
